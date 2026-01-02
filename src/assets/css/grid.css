@@ -1,0 +1,98 @@
+/* =========================
+   GRID / CODE WINDOW STYLES
+========================= */
+
+.gradient-border {
+  padding: 1px;
+  border-radius: 12px;
+  background: linear-gradient(
+    135deg,
+    rgba(96, 165, 250, 0.7),
+    rgba(45, 212, 191, 0.7)
+  );
+}
+
+.code-window {
+  border-radius: 11px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  background: #091121;
+}
+
+/* Header bar */
+.window-header {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 10px 12px;
+  background: #040b2d;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+/* Dots */
+.window-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+/* Optional hover polish */
+.gradient-border:hover {
+  transform: translateY(-2px);
+  transition: all 0.3s ease;
+}
+
+/* Image wrapper – CENTER everything */
+.gridbox-image-wrapper {
+  display: flex;
+  justify-content: center;   /* horizontal center */
+  align-items: center;       /* vertical center */
+  width: 100%;
+  margin: 24px 0 16px;
+}
+
+/* All grid images circular & centered */
+.gridbox-image-wrapper img {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid rgba(59, 130, 246, 0.6);
+  display: block;
+}
+
+/* Image name below image */
+.gridbox-image-name {
+  margin: 0 12px;
+  padding-bottom: 6px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.85);
+}
+.gridbox-actions {
+  display: flex;
+  justify-content: flex-end;
+  margin: 16px 0;
+  padding-right: 12px;
+}
+.gridbox-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* name left, button right */
+  padding: 0 12px 12px;
+}
+
+/* About Me text */
+.gridbox-title {
+  font-size: 15px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+/* Button wrapper (already left aligned internally) */
+.gridbox-actions {
+  display: flex;
+}
+
