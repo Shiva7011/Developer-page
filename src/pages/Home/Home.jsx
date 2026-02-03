@@ -1,7 +1,7 @@
 // 1️⃣ IMPORTS – sabse upar
 import Meteors from "@/components/ui/meteors";
 import GridBox from "@/components/GridBox";
-import amit from "../../assets/images/amit.jpeg";
+import amitImg from "../../assets/images/amit.jpeg";
 import HeroButton from "@/components/HeroButton";
 import shivaImg from "@/assets/images/shivaimage.jpeg";
 import { useNavigate } from "react-router-dom";
