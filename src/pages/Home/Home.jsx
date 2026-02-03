@@ -2,10 +2,8 @@
 import Meteors from "@/components/ui/meteors";
 import GridBox from "@/components/GridBox";
 import HeroButton from "@/components/HeroButton";
-import shubhamImg from "@/assets/images/shubham.jpeg";
+import amitImg from "@/assets/images/amit.jpeg";
 import shivaImg from "@/assets/images/shivaimage.jpeg";
-import bhulvaImg from "@/assets/images/bhulva.png";
-import gaganImg from "@/assets/images/gagan.png";
 import { useNavigate } from "react-router-dom";
 import "@/assets/css/home-text.css";
 
@@ -50,8 +48,6 @@ export default function Home() {
 
   {/* INNER WRAPPER */}
  <div className="w-full max-w-[1400px] px-6 sm:px-12 lg:px-20 flex flex-col">
-
-
     <h2 className="pt-[20px] text-3xl sm:text-4xl font-semibold text-white mb-4">
   Meet the {" "}
   <span className="gradient-text">
@@ -62,47 +58,37 @@ export default function Home() {
 
     {/* PARAGRAPH */}
     <p className="home-description  mb-16">
-      This project has been developed by our team of four developers,
-       with each member contributing to the design, development, and implementation of the system.
-        Through effective collaboration and division of responsibilities, we ensured that the final solution is robust,
-         efficient, and well structured.
+      This project is a full-stack food ordering platform called FoodieHub,
+       built to provide a smooth and modern online dining experience. It focuses on a clean user interface,
+        secure backend services, and seamless interaction between customers and restaurants, ensuring the system is efficient, 
+        scalable, and user-friendly.
     </p>
 
     {/* GRID */}
-    <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-10 place-items-center">
+   <div className="flex justify-center items-center gap-40 flex-wrap">
+    
 
-<GridBox title="Project Lead" image={shubhamImg} name="Shubham Saxena">
+<GridBox
+  title="Project Lead"  image={shivaImg} name={<span className="font-bold text-lg">Shiva Singh</span>}>
+
   <HeroButton
     size="sm"
     label="Know More"
-    onClick={() => navigate("/shubhamhero")}   // 👈 YAHI REDIRECT
+    onClick={() => navigate("/shivahero")}   // 👈 YAHI REDIRECT
   />
 </GridBox>
 
 
-<GridBox title="Team Member" image={shivaImg} name="Shiva Singh">
+<GridBox title="Team Member" image={amitImg} name={<span className="font-bold text-lg">Amit Gupta</span>}> 
   <HeroButton
     label="Know More"
-    onClick={() =>  navigate("/shivahero")}
-  />
-</GridBox>
-
-<GridBox title="Team Member" image={bhulvaImg} name="Shubham Kumar">
-  <HeroButton
-    label="Know More"
-    onClick={() =>  navigate("/bhulvahero")}
-  />
-</GridBox>
-
-<GridBox title="Team Member" image={gaganImg} name="Gagan Kumar">
-  <HeroButton
-    label="Know More"
-    onClick={() => navigate("/gaganhero")}
+    onClick={() =>  navigate("/shubhamhero")}
   />
 </GridBox>
     </div> {/* grid */}
     <br></br>
     {/* 👇 PARAGRAPH BELOW GRID */}
+
 <p className="home-description home-description-bottom">
   Through effective teamwork and clear division of responsibilities, the
   development team focused on building a high-quality application that meets
@@ -120,22 +106,20 @@ export default function Home() {
 
   {/* ABOUT TEXT */}
   <p>
-    This project is a full-stack web application built using modern technologies
-    to deliver a scalable, secure, and interactive platform. The frontend is
-    developed with React, TypeScript, and Vite, providing a responsive and
-    user-friendly interface.
+    FoodieHub is a modern online food ordering web application built using React and Spring Boot. 
+    The platform connects restaurants with customers by providing a centralized space where users can explore menus,
+    place orders, and manage their food preferences easily.
   </p>
 
   <p>
-    The backend combines Node.js with Express.js and Java Spring Boot REST APIs,
-    following a service-oriented architecture to handle authentication, data
-    processing, and business logic. MongoDB and Redis are used for data storage
-    and caching, while WebSockets enable real-time updates.
+    The frontend is developed using React 18, Tailwind CSS, MUI, and Redux, offering a responsive and visually engaging interface. 
+    The backend is powered by Spring Boot 3, providing secure REST APIs, authentication, and business logic management. 
+    MySQL is used for reliable data storage, while JWT and Spring Security ensure secure and role-based access control.
   </p>
 
   <p>
-    The application is deployed using cloud infrastructure and CI/CD practices
-    to ensure performance, reliability, and maintainability.
+    FoodieHub is designed with performance, scalability, and real-world usability in mind,
+     making it a strong example of a modern full-stack web application.
   </p>
 
   {/* KEY FEATURES HEADING */}
@@ -145,13 +129,23 @@ export default function Home() {
 
   {/* FEATURES LIST */}
   <ul className="list-disc list-inside space-y-2">
-    <li><b>Problem of the Day (POTD):</b> Encourages daily practice and consistent skill development.</li>
-    <li><b>Private Chat System:</b> Allows secure one-to-one communication between users.</li>
-    <li><b>Private Game Rooms:</b> Users can create and join game sessions using unique private keys.</li>
-    <li><b>User Progress Tracking:</b> Displays daily growth, performance metrics, and activity insights.</li>
-    <li><b>Support & Help Desk:</b> Dedicated module to handle user queries and technical issues.</li>
-    <li><b>Real-Time Interaction:</b> Enables live updates and smooth communication across features.</li>
-    <li><b>Secure & Scalable Architecture:</b> Designed with a focus on performance, reliability, and data security.</li>
+    <li><span className="font-bold text-lg">Multi-Restaurant Support:</span> Multiple restaurants can register and manage their menus on FoodieHub.</li>
+
+<li><span className="font-bold text-lg">Smart Cart System:</span> Users can add items to cart, remove items, and manage orders easily.</li>
+
+<li><span className="font-bold text-lg">Secure Authentication:</span> JWT-based login, role-based access, and protected APIs for better security.</li>
+
+<li><span className="font-bold text-lg">Online Payment Integration:</span> Secure checkout experience using Stripe payment gateway.</li>
+
+<li><span className="font-bold text-lg">Admin & Restaurant Panels:</span> Separate dashboards for admins and restaurant owners to manage data.</li>
+
+<li><span className="font-bold text-lg">Responsive UI:</span> Built with React, Tailwind, and MUI for a smooth and modern user experience.</li>
+
+<li><span className="font-bold text-lg">Order Tracking & Notifications:</span> Users receive updates about order status and activities.</li>
+
+<li><span className="font-bold text-lg">Scalable Full-Stack Architecture:</span> Developed using React and Spring Boot for performance and reliability.</li>
+
+
   </ul>
   <p className="pt-6 text-gray-300 italic">
   “Every line of code reflects collaboration, problem-solving, and a shared vision to create meaningful technology.”

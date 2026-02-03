@@ -1,4 +1,4 @@
-import ShubhamImg from "@/assets/images/shubham.jpeg";
+import amitImg from "@/assets/images/amit.jpeg";
 
 export default function About() {
   return (
@@ -12,7 +12,7 @@ export default function About() {
             <div className="relative mb-6 sm:mb-0">
               <div className="bg-linear-to-b aspect-76/59 relative rounded-2xl p-px from-zinc-300 to-transparent">
                 <img
-                  src={ShubhamImg}
+                  src={amitImg}
                   className="rounded-[15px] shadow block"
                   alt="payments illustration"
                   width={1207}
@@ -47,10 +47,9 @@ clean, responsive, and performance-driven solutions.
 
                   <div className="mt-6">
   <cite className="block font-medium text-white">
-    Shubham Saxena
+    Amit Gupta
   </cite>
 </div>
-
                 </blockquote>
               </div>
             </div>
